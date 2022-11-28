@@ -20,6 +20,5 @@ function countries() {
     console.log(country);
 }
 
-
 countries();
 console.log(country);
