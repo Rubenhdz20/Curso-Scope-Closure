@@ -1,7 +1,7 @@
 // Las closures permiten acceder al ambito de una funcion exterior desde una funcion interior. En JS, las clausuras se crean cada vez que una funcion es creada.
 // Tienes un closure cuando una funcion cualquiera accede a una variable fuera de su contexto 
 // El ambito lexico significa que la accesibilidad de las variables esta determinada por la posicion de las mismas dentro de los ambitos anidados
-// Las funciones anidadas que recuerdan el conjunto de variables a las que podiana acceder, por mas que se les invoque desde otro lugar, desde otro scope.
+// Closure: funciones anidadas que recuerdan el conjunto de variables a las que podian acceder, por mas que se les invoque desde otro lugar, desde otro scope.
 
 const myGlobal = 0;
 
@@ -84,9 +84,9 @@ moneyBox(10); //15
 const moneyBox = () => {
 var saveCoins = 0;
 const countCoins = (coins) => {
-        saveCoins += coins;
-        console.log(saveCoins);
-    }
+    saveCoins += coins;
+    console.log(saveCoins);
+}
 return countCoins;
 }
 
@@ -100,9 +100,9 @@ myMoneyBox(6)
 //const moneyBox = () => {
 var saveCoins = 0;
 const countCoins = (coins) => {
-        saveCoins += coins;
-        console.log(saveCoins);
-    }
+    saveCoins += coins;
+    console.log(saveCoins);
+}
    // return countCoins;
 //}
 

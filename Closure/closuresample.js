@@ -21,10 +21,22 @@ Output:
 90
 
 function sumWithClosure(firstNum) {
-    return function (secondNum) {
-      if (secondNum) {
-        return secondNum + firstNum;
+  return function (secondNum) {
+    if (secondNum) {
+      return secondNum + firstNum;
+    }
+    return firstNum;
+  };
+}
+
+function sumWithClosure1(firstNum) {
+  let a = firstNum;
+  return function (secondNum) {
+      let b = secondNum;
+      if (!b) {
+          return a;
+      } else{
+          return a + b;
       }
-      return firstNum;
-    };
+  }
 }
