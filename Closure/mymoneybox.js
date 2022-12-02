@@ -1,3 +1,5 @@
+
+
 function moneyBox() {
     let saveCoins = 0; 
     return function addingMoney(coins) {
