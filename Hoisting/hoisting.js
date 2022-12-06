@@ -3,6 +3,7 @@
 // El código permanece igual, solo es una interpretación del motor de JavaScript. En el caso de las variables solamente sucede cuando son declaradas con var.
 
 // Hoisting en variables declaradas con var
+
 // En el siguiente código, la respuesta del console.log es undefined, porque al hacer referencia a una variable que no está declarada aún, JavaScript crea esta variable antes de declararla y le asigna un valor de undefined.
 
 console.log(nombre) // undefined

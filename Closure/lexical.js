@@ -58,9 +58,11 @@ closure() // 4
 // La mejor manera de entender un closure es por medio de un ejemplo práctico. Cuando declaramos una función dentro de nuestro global scope, estamos usando un closure.
 
 var myVar = 'hi';
-functionmyFunction() {
+
+function myFunction() {
 	console.log(myVar);
 }
+
 myFuntion(); // hi
 
 // Los closures son básicamente cuando aprovechamos la habilidad de JavaScript de emplear las variables que están en el scope padre de nuestro bloque de código, por eso el global scope es un closure grande. El bloque myFunction puede utilizar TODAS las variables que están disponibles en el bloque inmediato anterior. Usando el ejemplo visto en el video:
